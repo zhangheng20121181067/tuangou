@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>我的订单</title>
+    <link rel="stylesheet" href="css/orderList.css">
+    <script src="js/common/jquery.js"></script>
+    <script src="js/common/back.js"></script>
+
+    <script src="js/common/common.js"></script>
+    <script src="js/common/weixin.js"></script>
+
+    <script src="js/common/resize.js"></script>
+    <script src="js/common/ajax.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="list">
+            <div class="item ">
+                <div class="top marPad clear">
+                    <div class="pic fl"><img src="images/33E9E50B-1AA6-4AC7-8E2E-BEFF509B13D5@1x.png" alt="" ></div>
+                    <div class="infor fl">
+                        <h3>爱茜茜里意爱茜茜里意大利健康冰淇爱茜茜里意淋</h3>
+                        <p class="clear">
+                            <span class="fl sure"><sub>¥</sub>198</span>
+                            <span class="fl cancel">¥298</span>
+                            <span class="fr">多人拼团</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeOrder clear borderTop pad15">
+                    <div class="time fl fon16 col666">2016-03-12  21:12:45</div>
+                    <a href="ptStatus.html" class="ptStatus"  data-index="1">
+                        <div class="pay operate fr fon14 backhuang colfff    "  >
+                            立即付款
+                        </div>
+                    </a>
+                    <div class="surplusTime fr fon14 col666">
+                        剩余<span class="minute">13</span>分<span class="second">26</span>秒
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="item mart10">
+                <div class="top marPad clear">
+                    <div class="pic fl"><img src="images/33E9E50B-1AA6-4AC7-8E2E-BEFF509B13D5@1x.png" alt="" ></div>
+                    <div class="infor fl">
+                        <h3>Midori Traveler's Notebook TN 记事本</h3>
+                        <p class="clear">
+                            <span class="fl sure"><sub>¥</sub>198</span>
+                            <span class="fl cancel">¥298</span>
+                            <span class="fr">多人拼团</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeOrder clear borderTop pad15">
+                    <div class="time fl fon16 col666">2016-03-12  21:12:45</div>
+                    <a href="ptStatus.html"  class="ptStatus"   data-index="2">
+                        <div class="chaoshi operate fr fon14 colhongzi  " >
+                            未达目标人数
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script>
+           $(".ptStatus").on("click",function(){
+              //alert( $(this).attr("data-index"));
+               setLocVal("ptStatus",$(this).attr("data-index"));
+           })
+    </script>
+</body>
+
+
+</html>

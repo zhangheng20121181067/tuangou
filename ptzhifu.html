@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>支付订单</title>
+    <link rel="stylesheet" href="css/ptzhifu.css">
+    <link rel="stylesheet" href="css/postbirdAlertBox.css">
+
+    <script src="js/common/jquery.js"></script>
+    <script src="js/common/back.js"></script>
+
+    <script src="js/common/common.js"></script>
+    <script src="js/common/weixin.js"></script>
+
+    <script src="js/common/resize.js"></script>
+    <script src="js/common/ajax.js"></script>
+    <script src="js/common/postbirdAlertBox.js"></script>
+
+
+
+    <script src="js/ptzhifu.js"></script>
+
+</head>
+<body>
+    <div class="main">
+        <div class="chaoshi">
+            <p>请在14分52秒内完成支付，超时将取消订单</p>
+        </div>
+
+        <div class="goodsInfor marPad clear">
+            <div class="pic fl"><img src="images/33E9E50B-1AA6-4AC7-8E2E-BEFF509B13D5@1x.png" alt="" data-rjs="1" ></div>
+            <div class="infor fl">
+                <h3>Midori Traveler's Notebook TN 记事本</h3>
+                <p>¥20.00</p>
+            </div>
+        </div>
+
+        <div class="orderDetail fon16">
+            <p class="pad15 lineht38">订单明细</p>
+            <div class="orderNumber flex align-items height50 pad15 backfff">
+                <div class="left">订单号</div>
+                <div class="right flex-grow textRight">121245454545</div>
+            </div>
+            <div class="orderTime flex align-items  height50 pad15 backfff borderTop">
+                <div class="left">下单时间</div>
+                <div class="right flex-grow textRight">2016-03-12  21:12:45</div>
+            </div>
+            <div class="quantity flex align-items  height50 pad15 backfff borderTop">
+                <div class="left">数量</div>
+                <div class="right flex-grow textRight">1</div>
+            </div>
+            <div class="Price flex align-items  height50 pad15 backfff borderTop">
+                <div class="left">总价</div>
+                <div class="right flex-grow textRight">¥<span>20.00</span></div>
+            </div>
+        </div>
+
+        <div class="zhifuWay fon16">
+            <p class="pad15 lineht38">支付方式</p>
+           <!-- <div class="item zhifubao flex align-items jus-between height50 pad15 backfff">
+                <div class="left flex align-items">
+                    <img src="images/FF5832A9-A56E-4741-9CCA-FFFB93557F5F@1x.png" alt="">
+                    <span class="align-items">支付宝</span>
+                </div>
+                <div class="right click"></div>
+            </div>-->
+            <div class="item weixin flex align-items jus-between  height50  borderTop pad15 backfff">
+                <div class="left flex align-items">
+                    <img src="images/B6E95E94-67A4-405D-B575-E2769FE58BE4@1x.png" alt="">
+                    <span>微信支付</span>
+                </div>
+                <div class="right click"></div>
+            </div>
+        </div>
+
+        <div class="lijizhifu clear">
+            <div class="left fl ">
+                <div class="price">应付金额:<span>￥20</span></div>
+            </div>
+
+            <div class="right fr">
+                立即支付
+            </div>
+           <!-- <a href="zhifuStatus.html?zhifuStatus=2">
+                <div class="right fr">
+                    立即支付
+                </div>
+            </a>-->
+        </div>
+
+    </div>
+
+
+</body>
+
+<script>
+    //支付方式
+    /* $(".zhifuWay").find(".item").on("click",function(){
+         if( $(this).find(".right").hasClass("click")){
+             $(this).find(".right").removeClass("click");
+         }else{
+             $(this).find(".right").addClass("click").parents(".item").siblings().find(".right").removeClass("click");
+         }
+     });*/
+
+
+    //为了展示同一页面下的不同状态
+  /*  setTimeout(function(){
+        $(".chaoshi").css("backgroundColor","#ffcfcc");
+        $(".chaoshi p").text("支付已超时，请重新下单");
+        $(".zhifuWay,.lijizhifu").addClass("hide");
+    },3000);
+
+     setTimeout(function(){
+        location.href="ptzhifu.html";
+     },6000)*/
+
+</script>
+
+</html>

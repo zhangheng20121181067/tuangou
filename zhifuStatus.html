@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>支付状态</title>
+    <link rel="stylesheet" href="css/zhifuStatus.css">
+    <script src="js/common/jquery.js"></script>
+    <script src="js/common/back.js"></script>
+
+    <script src="js/common/common.js"></script>
+    <script src="js/common/weixin.js"></script>
+
+    <script src="js/common/resize.js"></script>
+
+</head>
+<body>
+    <div class="main">
+        <div class="status1 hide">
+            <div class="pic zfSuccess">
+                <p class="fon16">支付成功</p>
+            </div>
+            <div class="ptTeam">
+                <ul>
+                    <li class="first act">
+                        <div> <span>团长</span></div>
+                        <p>张三</p>
+                    </li>
+                    <li>
+                        <div></div>
+                        <p></p>
+                    </li>
+                    <li>
+                        <div></div>
+                        <p></p>
+                    </li>
+                </ul>
+                <div class="charen">
+                    还差 <span>2</span>人，组团成功
+                </div>
+
+                <div class="surplusTime flex jus-between align-items">
+                    <div class="left"></div>
+                    <div class="mid flex align-items">剩余<span>01</span>天<span>02</span>时<span>03</span>分<span>04</span>秒 结束</div>
+                    <div class="right"></div>
+                </div>
+            </div>
+        </div>
+        <div class="status2 hide">
+            <div class="pic zfFail">
+                <p class="fon16">支付取消或失败</p>
+            </div>
+        </div>
+
+       <div class="status1 hide">
+           <a href="orderStatus.html">
+               <div class="chakanOrder btn1">
+                   查看订单
+               </div>
+           </a>
+           <div class="share btn2">
+               立即分享
+           </div>
+       </div>
+       <div class="status2     hide">
+           <a href="ptzhifu.html">
+               <div class="afresh btn1 ">
+                   重新支付
+               </div>
+           </a>
+           <a href="index.html">
+               <div class="backIndex btn2">
+                   返回首页
+               </div>
+           </a>
+       </div>
+
+    </div>
+
+    <script src="js/zhifuStatus.js"></script>
+</body>
+
+
+
+</html>

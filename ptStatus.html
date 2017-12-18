@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>拼团状态</title>
+    <link rel="stylesheet" href="css/ptStatus.css">
+    <link rel="stylesheet" href="css/postbirdAlertBox.css">
+
+    <script src="js/common/jquery.js"></script>
+    <script src="js/common/back.js"></script>
+
+    <script src="js/common/common.js"></script>
+    <script src="js/common/weixin.js"></script>
+
+    <script src="js/common/resize.js"></script>
+    <script src="js/common/ajax.js"></script>
+    <script src="js/common/showMore.js"></script>
+
+
+</head>
+<body>
+    <div class="banner">
+        <!--  <img src="images/57B698D0-FAF1-4885-9533-88EA938AFA0F@1x.png" alt="" data-rjs="3">-->
+    </div>
+
+
+
+    <div class="main">
+        <div class="ptThing">
+            <p>Midori Traveler's Notebook TN记事本 oook TN 记事本</p>
+
+            <div class="flex jus-between align-items intro   status1 hide">
+                <div class="flex jus-between">
+                    <span class="first">[多人拼团]</span>
+                    <span>[限购X件]</span>
+                    <span>[不可退款]</span>
+                </div>
+                <div class="time">
+                    倒计时 <span>20:23:23</span>
+                </div>
+            </div>
+            <div class="price    status2 hide">
+                <span class="sure">￥198</span>
+                <span class="cancel">￥298</span>
+            </div>
+        </div>
+
+        <div class="ptTeam">
+            <ul>
+                <li class="first act">
+                    <div> <span>团长</span></div>
+                    <p>张三</p>
+                </li>
+                <li>
+                    <div></div>
+                    <p></p>
+                </li>
+                <li>
+                    <div></div>
+                    <p></p>
+                </li>
+            </ul>
+            <div class="charen">
+                还差 <span>2</span>人，组团成功
+            </div>
+
+            <div class="surplusTime flex jus-between align-items">
+                <div class="left"></div>
+                <div class="mid flex align-items">剩余<span>01</span>天<span>02</span>时<span>03</span>分<span>04</span>秒 结束</div>
+                <div class="right"></div>
+            </div>
+        </div>
+
+        <div class="shopList marPad">
+            <h3>团购物品</h3>
+            <div class="shop-item flex jus-between align-items">
+                <div class="xiangqing flex jus-between align-items">
+                    <div class="pic">
+                        团
+                    </div>
+                    <div class="title">
+                        <h3>必胜客圣诞双人餐</h3>
+                        <p>有效期: 2016.3.18-2016.5.22</p>
+                    </div>
+                </div>
+                <div class="shuliang">
+                    X<span>6</span>
+                </div>
+            </div>
+            <div class="shop-item flex jus-between align-items">
+                <div class="xiangqing flex jus-between align-items">
+                    <div class="pic dai">
+                        代
+                    </div>
+                    <div class="title">
+                        <h3>百丽女鞋20元代金券</h3>
+                        <p>有效期: 2016.3.18-2016.5.22</p>
+                    </div>
+                </div>
+                <div class="shuliang">
+                    X<span>6</span>
+                </div>
+            </div>
+            <div class="shop-item flex jus-between align-items ">
+                <div class="xiangqing flex jus-between align-items">
+                    <div class="pic dai">
+                        代
+                    </div>
+                    <div class="title">
+                        <h3>百丽女鞋20元代金券</h3>
+                        <p>有效期: 2016.3.18-2016.5.22</p>
+                    </div>
+                </div>
+                <div class="shuliang">
+                    X<span>6</span>
+                </div>
+            </div>
+            <div class="shop-item flex jus-between align-items ">
+                <div class="xiangqing flex jus-between align-items">
+                    <div class="pic dai">
+                        代
+                    </div>
+                    <div class="title">
+                        <h3>百丽女鞋20元代金券</h3>
+                        <p>有效期: 2016.3.18-2016.5.22</p>
+                    </div>
+                </div>
+                <div class="shuliang">
+                    X<span>6</span>
+                </div>
+            </div>
+        </div>
+        <div class="showMore">
+            查看更多
+        </div>
+
+        <div class="ptxuzhi h3p marPad backfff">
+            <h3>拼团须知</h3>
+            <div class="intro">
+                <p>本团购需要x人开团，x人参与后在xx小时内完成，团购物品数量仅限xx份，先团先得~</p>
+                <p>组团失败的用户，钱款会原路退回您的账户</p>
+            </div>
+        </div>
+
+        <div class="buyxuzhi h3p marPad">
+            <h3>购买须知</h3>
+            <div class="intro">
+                <p>仅限会金卡会员购买</p>
+            </div>
+        </div>
+
+        <div class="tgIntro h3p marPad">
+            <h3>团购说明</h3>
+            <div class="intro">
+                <p>5选1(不可重复)</p>
+                <p>瑞考尼香草冰淇淋蛋糕1个</p>
+                <p>地中海风情巧克力蛋糕1个</p>
+                <p>罗马假日提拉米苏蛋糕1个</p>
+                <p>绿野仙踪抹茶蛋糕1个</p>
+                <p>一心一意草莓蛋糕1个</p>
+                <p>生成日期：自提二周内生产，保质期6个月</p>
+                <p>保存须知：0-4℃保存24小时</p>
+                <p>免费提供蜡烛1包+刀1把+蛋糕叉1把+小盘1包，如超出，免费提供</p>
+                <p>免费提供包装</p>
+                <p>产品使用须知变更：免费提供蜡烛1包+刀1把+蛋糕叉1把+小盘1包，如超出，每份需收取5元，给您带来不便，敬请谅解！</p>
+            </div>
+        </div>
+
+        <div class="tuikuanIntro   col333 fon16">
+            <div class="flex align-items jus-between height50 marPad expand">
+                <div class="left">退款说明</div>
+                <div class="right  rightArrow"></div>
+            </div>
+
+            <div class="intro borderTop pad1015 backfff lineht24  expandMore">
+                <p>暂不接受无条件退款</p>
+            </div>
+        </div>
+
+        <div class="kaituanIntro">
+            <div class="item  mart10 backfff flex jus-between align-items  status1 hide">
+                <div class="left flex jus-between">
+                    <div class="price"><span class="sure">￥198</span><span class="cancel">￥298</span></div>
+                    <div class="canyu"><span>33</span>人已参与</div>
+                </div>
+                <a href="surekaituan.html">
+                    <div class="right ">
+                        加入拼团
+                    </div>
+                </a>
+            </div>
+
+            <div class="item  mart10  textCenter lineht50  backhuang colfff fon16  share    status2 hide ">
+                还差两人，立即分享
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/ptStatus.js"></script>
+
+
+</body>
+
+</html>

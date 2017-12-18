@@ -1,0 +1,74 @@
+@import "common";
+@import "common/mixins";
+
+.item{
+  background-color: $foncolfff;
+ .top{
+   border-top: 1px solid #eee;
+   border-bottom: 1px solid #eee;
+   padding:.115rem .15rem ;
+   &.marPad{
+     margin:0;
+   }
+   .pic{
+     img{
+       width:.80rem;
+       height:.80rem;
+     }
+   }
+   .infor{
+     margin-left:.15rem;
+     h3{
+       width:2.44rem;
+       font-size: $fonSize16;
+       line-height: .26rem;
+       color:$foncol000;
+       font-weight: 500;
+     }
+     p{
+       margin-top:.06rem;
+       color:$foncolhuang;
+       span{
+         display:block;
+         line-height: .24rem;
+         color:$foncol666;
+         font-size: $fonSize14;
+         &.cancel{
+           margin-left:.10rem;
+           text-decoration: line-through;
+         }
+         &.sure{
+           color:$foncolhuang;
+           font-size: $fonSize20;
+           sub{
+             font-size: $fonSize16;
+           }
+         }
+       }
+     }
+   }
+ }
+
+  .timeOrder{
+    height:.45rem;
+    line-height: .45rem;
+    a{
+      display: block;
+    }
+    .surplusTime{
+      margin-right:.1rem;
+    }
+    .operate{
+      padding:0 6px;
+      text-align: center;
+      line-height: .28rem;
+      border-radius: 6px;
+      margin-top:.08rem;
+
+      &.xiangqing{
+        border-radius: 6px;
+        border:1px solid $foncolhuang
+      }
+    }
+  }
+}

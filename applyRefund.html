@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>申请退款</title>
+    <link rel="stylesheet" href="css/applyRefund.css">
+    <script src="js/common/jquery.js"></script>
+    <script src="js/common/back.js"></script>
+    <script src="js/common/common.js"></script>
+    <script src="js/common/weixin.js"></script>
+    <script src="js/common/resize.js"></script>
+</head>
+<body>
+<div class="main">
+    <div class="orderNumber flex jus-between align-items marPad">
+        <span>订单号码</span>
+        <span class="number">145212451245</span>
+    </div>
+
+    <div class="goodsInfor marPad clear">
+        <div class="pic fl"><img src="images/33E9E50B-1AA6-4AC7-8E2E-BEFF509B13D5@1x.png" alt=""  ></div>
+        <div class="infor fl">
+            <h3>Midori Traveler's Notebook TN 记事本</h3>
+            <p class="clear">
+                <span class="fl sure"><sub>¥</sub>20</span>
+                <span class="fl cancel">¥298</span>
+                <span class="fr">多人拼团</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="jine flex align-items height57 fon18 marPad">
+        <div class="left">退款金额</div>
+        <div class="right flex-grow textRight colhuang">￥20</div>
+    </div>
+
+    <div class="tuikuanDetail fon16">
+        <p class="pad15 lineht38">订单明细</p>
+        <div class="intro pad15 ">
+            <textarea class="textarea"   name="" id="" >请输入退款说明</textarea>
+
+        </div>
+    </div>
+
+    <a class="disabledClick" href="refundDetail.html">
+        <div class="submitApply height50 textCenter colfff fon18 " style="background-color: #b1adad">
+            提交申请
+        </div>
+    </a>
+
+</div>
+</body>
+<script>
+   $(".textarea").focus(function(){
+       if($(this).val()=="请输入退款说明"){
+           $(this).val("");
+       }
+   }).blur(function(){
+       if(!$(this).val()){
+           $(this).val("请输入退款说明");
+           $(".submitApply").css("backgroundColor","#b1adad")
+       }else{
+           $(".submitApply").css("backgroundColor","#ff921a")
+       }
+   }).on("keyup",function(){
+       if(!$(this).val()){
+           $(".submitApply").css("backgroundColor","#b1adad")
+       }else{
+           $(".submitApply").css("backgroundColor","#ff921a")
+       }
+   });
+
+    $(".submitApply").on("click",function(e){
+        if($(".textarea").val()=="请输入退款说明"){
+           return false;
+        }
+    })
+</script>
+</html>

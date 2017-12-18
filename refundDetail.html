@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>退款详情</title>
+    <link rel="stylesheet" href="css/refundDetail.css">
+    <script src="js/common/jquery.js"></script>
+    <script src="js/common/back.js"></script>
+
+    <script src="js/common/common.js"></script>
+    <script src="js/common/weixin.js"></script>
+
+    <script src="js/common/resize.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="orderNumber flex jus-between align-items marPad">
+            <span>订单号码</span>
+            <span class="number">145212451245</span>
+        </div>
+
+
+        <div class="goodsInfor marPad clear">
+            <div class="pic fl"><img src="images/33E9E50B-1AA6-4AC7-8E2E-BEFF509B13D5@1x.png" alt="" data-rjs="1" ></div>
+            <div class="infor fl">
+                <h3>Midori Traveler's Notebook TN 记事本</h3>
+                <p class="clear">
+                    <span class="fl sure"><sub>¥</sub>20</span>
+                    <span class="fl cancel">¥298</span>
+                    <span class="fr">多人拼团</span>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="refundInfor fon16">
+            <div class="Price flex align-items  height57  borderTop pad15 backfff">
+                <div class="left">退款金额</div>
+                <div class="right flex-grow textRight colhuang">¥<span>20.00</span></div>
+            </div>
+            <div class="Price flex align-items  height57  borderTop pad15 backfff">
+                <div class="left">申请时间</div>
+                <div class="right flex-grow textRight col666">2016-03-12  21:12:45</div>
+            </div>
+            <div class="Price flex align-items  height57  borderTop pad15 backfff">
+                <div class="left">退款形式</div>
+                <div class="right flex-grow textRight col666">原支付路径返回</div>
+            </div>
+        </div>
+
+        <div class="refundIntro fon16 col666">
+            <p class="pad15 lineht38 backeee">退款说明</p>
+            <div class="intro  height57 lineht57 fon18  borderTop pad15 backfff">
+                不想要了
+            </div>
+        </div>
+
+        <div class="refundProgress fon16">
+            <p class="pad15 lineht38 backeee">退款进度</p>
+            <div class="progress backfff clear">
+                <div class="lineBar fl">
+                   <!-- <div class="line"></div>-->
+                </div>
+                <div class="progressIntro  fl ">
+                    <div class="refundSuccess hide">
+                        <div class="progress-item  colhuang">
+                            <div class="line"></div>
+                            <div class="circle act"></div>
+                            <p>钱款已退回至您的账户中</p>
+                            <span class="time">2016-06-04 21:12:33</span>
+                        </div>
+                        <div class="progress-item  borderTop col666">
+                            <div class="line"></div>
+                            <div class="circle"></div>
+                            <p>审核通过，正在发起退款</p>
+                            <span class="time">2016-06-04 21:12:33</span>
+                        </div>
+                        <div class="progress-item  borderTop col666">
+                            <div class="line"></div>
+                            <div class="circle"></div>
+                            <p>正在审核中，预计1天内得到答复</p>
+                            <span class="time">2016-06-04 21:12:33</span>
+                        </div>
+                        <div class="progress-item  borderTop col666">
+                            <p>发起退款申请</p>
+                            <span class="time">2016-06-04 21:12:33</span>
+                        </div>
+                    </div>
+                    <div class="refundFail hide">
+                        <div class="progress-item  colhuang">
+                            <div class="line"></div>
+                            <div class="circle act"></div>
+                            <p>审核失败，您的申请已被驳回，详情请拨打客服热线</p>
+                            <span class="time">2016-06-04 21:12:33</span>
+                        </div>
+                        <div class="progress-item  borderTop col666">
+                            <div class="line"></div>
+                            <div class="circle "></div>
+                            <p>正在审核中，预计1天内得到答复</p>
+                            <span class="time">2016-06-04 21:12:33</span>
+                        </div>
+                        <div class="progress-item  borderTop col666">
+                            <div class="line"></div>
+                            <div class="circle "></div>
+                            <p>发起退款申请</p>
+                            <span class="time">2016-06-04 21:12:33</span>
+                        </div>
+                    </div>
+                    <div class="refundCancel ">
+                        <div class="progress-item  colhuang">
+                            <div class="line"></div>
+                            <div class="circle act"></div>
+                            <p>发起退款申请</p>
+                            <span class="time">2016-06-04 21:12:33</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <div class="fixed">
+           <div class="backeee"></div>
+           <a href="orderStatus.html">
+               <div class="cancel height57 lineht57 textCenter fon18 colfff backhuang">
+                   取消退款
+               </div>
+           </a>
+       </div>
+
+    </div>
+</body>
+<script>
+   //为了展示同一页面的不同状态
+   //取消退款
+   setTimeout(function(){
+       $(".progressIntro .refundSuccess").removeClass("hide");
+       $(".progressIntro .refundCancel,.fixed").addClass("hide");
+   },4000);
+
+   //退款失败
+   setTimeout(function(){
+       $(".progressIntro .refundFail").removeClass("hide");
+       $(".progressIntro .refundCancel,.progressIntro .refundSuccess,.fixed").addClass("hide");
+   },8000);
+   //退款成功
+   setTimeout(function(){
+       $(".progressIntro .refundCancel,.fixed").removeClass("hide");
+       $(".progressIntro .refundSuccess,.progressIntro .refundFail").addClass("hide");
+   },12000);
+</script>
+</html>

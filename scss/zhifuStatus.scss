@@ -1,0 +1,131 @@
+@import "common";
+
+.pic{
+  height:2.28rem;
+  @include bg-size(initial);
+  background-color:#fff ;
+  background-position: center  .45rem;
+  &.zfFail{
+    background-image: url(../images/E16FF684-09E5-4A33-9BFE-D206E7945E59@1x.png);
+  }
+  &.zfSuccess{
+    background-image: url(../images/36878F37-A372-411B-B98B-DF2824110295@1x.png);
+  }
+  p{
+    text-align: center;
+    color:$foncol999;
+    padding-top:1.8rem;
+  }
+}
+
+.ptTeam{
+  text-align: center;
+  ul{
+    display: inline-block;
+    margin:.15rem 0;
+    li{
+      float:left;
+      margin-left:.20rem;
+      div{
+        width:.60rem;
+        height:.60rem;
+        @include bg-size(initial);
+        background-image: url(../images/F8A81D58-02F2-491F-8C3B-06FB976F7F04@1x.png);
+        position: relative;
+        span{
+          display:block;
+          width:.28rem;
+          height:.28rem;
+          line-height: .28rem;
+          text-align: center;
+          border-radius: 50%;
+          background-color: $foncolhong;
+          font-size: $fonSize10;
+          color:$foncolfff;
+          position: absolute;
+          right:-.12rem;
+          top:-.04rem;
+        }
+      }
+      p{
+        line-height: .36rem;
+      }
+      &.first{
+        margin-left:0;
+      }
+      &.act{
+        div{
+          background-image: url(../images/6CE12A9E-2189-4EBE-9741-B1F0FB351FFC@1x.png);
+        }
+
+      }
+    }
+  }
+  .charen{
+    color:$foncol999;
+    font-size: $fonSize16;
+    margin-bottom:.17rem;
+    span{
+      color:$foncolhuang;
+    }
+  }
+  .surplusTime{
+    height:.24rem;
+    font-size: $fonSize15;
+    .left{
+      width:.45rem;
+      height:.24rem;
+      @include bg-size(contain);
+      background-image: url(../images/FDC9C4FE-4A16-4F1B-A265-FA420B9259A2@2x.png);
+      background-position: center right;
+    }
+    .mid{
+      span{
+        display: inline-block;
+        width:.24rem;
+        height:.22rem;
+        border-radius: 5px;
+        background-color: #bbb;
+        font-size: $fonSize16;
+        color:$foncolfff;
+        margin:0 .04rem;
+      }
+    }
+    .right{
+      width:.45rem;
+      height:.22rem;
+
+      @include bg-size(contain);
+      background-image: url(../images/FEB73CAE-22A7-40B0-A138-61B1CEFA302A@2x.png);
+      background-position: center right;
+    }
+  }
+}
+
+.btn1,.btn2{
+  margin:0 auto;
+  width:3.45rem;
+  height:.44rem;
+  line-height: .44rem;
+  text-align: center;
+  border-radius: 8px;
+  margin-top:.34rem;
+  background-color: $foncolhuang;
+  color:$foncolfff;
+  font-size: $fonSize16;
+}
+
+.btn2{
+  margin-top:.10rem;
+  height:.46rem;
+  line-height: .46rem;
+  border-radius: 8px;
+  border:1px solid $foncolhuang;
+  background-color: transparent;
+  color:$foncolhuang;
+}
+
+
+
+
+

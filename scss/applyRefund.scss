@@ -1,0 +1,70 @@
+@import "common";
+
+
+.goodsInfor{
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  &.marPad{
+    margin:0;
+  }
+  padding:.115rem .15rem;
+  background-color: $foncolfff;
+  .pic{
+    img{
+      width:.80rem;
+      height:.80rem;
+    }
+  }
+  .infor{
+    margin-left:.15rem;
+    h3{
+      width:2.44rem;
+      font-size: $fonSize16;
+      line-height: .26rem;
+      color:$foncol000;
+      font-weight: 500;
+    }
+    p{
+      margin-top:.06rem;
+      color:$foncolhuang;
+      span{
+        display:block;
+        line-height: .24rem;
+        color:$foncol666;
+        font-size: $fonSize14;
+        &.cancel{
+          margin-left:.10rem;
+          text-decoration: line-through;
+        }
+        &.sure{
+          color:$foncolhuang;
+          font-size: $fonSize20;
+          sub{
+            font-size: $fonSize16;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tuikuanDetail{
+  textarea{
+    text-indent: 10px;
+    padding-top:10px;
+    width:100%;
+    outline: none;
+    height:1.52rem;
+    box-shadow: 1px 1px 6px #888888;
+    color:$foncol666;
+    text-align: left;
+    resize: none;
+  }
+}
+.submitApply{  /* ,.disabledClick*/
+  width:100%;
+  line-height: .50rem;
+  position: fixed;
+  bottom:0;
+}
+

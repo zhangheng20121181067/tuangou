@@ -1,0 +1,76 @@
+@import "common";
+@import "common/mixins";
+
+.chaoshi{
+  height:.38rem;
+  line-height: .38rem;
+  padding:0 .15rem;
+  color:$foncolhuang;
+  @include bg-size(initial);
+  background-color:#ffe7cc ;
+  background-image: url(../images/AE705FC7-B87F-469E-A42A-C715A097F9B6@1x.png);
+  background-position: .15rem center;
+  p{
+    padding-left:.25rem;
+    font-size: $fonSize14;
+    color:$foncolhuang;
+  }
+}
+
+
+.orderDetail{
+
+}
+
+.zhifuWay{
+  .left{
+    span{
+      margin-left:.10rem;
+    }
+  }
+  .right{
+    width:.22rem;
+    height:.22rem;
+    border-radius: 50%;
+    border:1px solid #ccc;
+    &.click{
+      width:.24rem;
+      height:.24rem;
+      border:none;
+
+      @include bg-size(cover);
+      background-image: url(../images/22322E45-796A-4FAC-8C37-53AC7697F1F0@2x.png);
+
+    }
+  }
+}
+
+.lijizhifu{
+  width:100%;
+  height:.50rem;
+  position: fixed;
+  bottom:0;
+  .left{
+    width:2.10rem;
+    padding-left:.15rem;
+    line-height: .50rem;
+    font-size: $fonSize16;
+    background-color: $foncolfff;
+    span{
+      color:$foncolhuang;
+      font-size: $fonSize18;
+      margin-left:.02rem;
+      sub{
+        font-size: $fonSize20;
+      }
+    }
+  }
+  .right{
+    width:1.50rem;
+    line-height: .50rem;
+    text-align: center;
+    background-color: #ff8500;
+    color:$foncolfff;
+    font-size: $fonSize18;
+  }
+}

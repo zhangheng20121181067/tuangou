@@ -1,0 +1,106 @@
+@import "common";
+@import "common/mixins";
+
+a{
+  color:#000;
+}
+
+.goodsInfor{
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  &.marPad{
+    margin:0;
+  }
+  padding:.115rem .15rem;
+  background-color: $foncolfff;
+  .pic{
+    img{
+      width:.80rem;
+      height:.80rem;
+    }
+  }
+  .infor{
+    margin-left:.15rem;
+    h3{
+      width:2.44rem;
+      font-size: $fonSize16;
+      line-height: .26rem;
+      color:$foncol000;
+      font-weight: 500;
+    }
+    p{
+      margin-top:.06rem;
+      color:$foncolhuang;
+      span{
+        display:block;
+        line-height: .24rem;
+        color:$foncol666;
+        font-size: $fonSize14;
+        &.cancel{
+          margin-left:.10rem;
+          text-decoration: line-through;
+        }
+        &.sure{
+          color:$foncolhuang;
+          font-size: $fonSize20;
+          sub{
+            font-size: $fonSize16;
+          }
+        }
+      }
+    }
+  }
+}
+
+.applyRefund{
+  &.marPad{
+    margin: 0;
+  }
+  height:.50rem;
+  line-height: .50rem;
+  font-size: $fonSize16;
+  color:$foncol333;
+  .left,.right{
+    text-align: center;
+  }
+  .ptFail,.refundSuccess,.refundRun{
+    span{
+      display: inline-block;
+      width:.16rem;
+      height:.14rem;
+      @include retina('../images/38050C15-4474-4D39-B2E9-DF8C26CEB7EC.png', 3,contain, center right no-repeat )
+    }
+  }
+}
+
+
+.phone{
+  font-size: $fonSize16;
+  color:$foncol333;
+  .left{
+    height:.57rem;
+    line-height: .57rem;
+    @include bg-size(initial);
+    background-image: url(../images/9B60210C-B53A-41B9-9883-26089D06CF12@1x.png);
+    background-position: left center;
+    padding-left:.3rem;
+  }
+  .right{
+    width:.54rem;
+    height:.28rem;
+    text-align: center;
+    line-height: .28rem;
+    border-radius: 8px;
+    border:1px solid $foncolhuang;
+    color:$foncolhuang
+  }
+}
+
+
+.orderDetail{
+  .realzhifu{
+    .right{
+      color:$foncolhuang
+    }
+  }
+}

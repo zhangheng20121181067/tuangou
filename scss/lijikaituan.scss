@@ -1,0 +1,150 @@
+
+@import "common";
+
+
+.banner{
+    height:2.24rem;
+    @include bg-size(cover);
+    background-image: url(../images/57B698D0-FAF1-4885-9533-88EA938AFA0F@2x.png);
+   /* @include retina('../images/57B698D0-FAF1-4885-9533-88EA938AFA0F.png', 3,cover, center no-repeat transparent)*/
+}
+
+.main{
+    .ptThing{
+        padding:.09rem .15rem 0;
+        background-color: $foncolfff;
+        p{
+            color:$foncol000;
+            font-size: $fonSize16;
+            line-height: .23rem;
+        }
+        .intro{
+            height:.36rem;
+            span{
+                font-size: $fonSize13;
+                color:$foncolhuang;
+                margin-left:.10rem;
+                &.first{
+                    margin-left:0;
+                }
+            }
+            .time{
+                font-size: $fonSize14;
+                color:$foncol666;
+                span{
+                    color:$foncolhuang;
+                    font-size: $fonSize18;
+                    margin-left:0;
+                }
+            }
+        }
+    }
+
+    .shopList{
+        border-bottom:2px solid #eee;
+        h3{
+            line-height: .40rem;
+            font-size: $fonSize17;
+            color:$foncol333;
+        }
+        p{
+            font-size: $fonSize15;
+            color:$foncol666;
+        }
+        .shop-item{
+            height:.70rem;
+            border-bottom:2px solid #eee;
+            .xiangqing{
+                .pic{
+                    width:.40rem;
+                    height:.40rem;
+                    border-radius: 50%;
+
+                    @include bg-size(contain);
+                    background-image: url(../images/5B15958B-4DE9-401A-9F59-DD92DAC9534F@2x.png);
+                    background-color:$foncolhong ;
+
+                    font-size: $fonSize12;
+                    color:$foncolhong;
+                    text-align: center;
+                    line-height: .40rem;
+                    &.dai{
+                        background-color: #f8c52f;
+                    }
+                }
+                .title{
+                    margin-left:.12rem;
+                    h3{
+                        line-height: .28rem;
+                    }
+                }
+            }
+            .shuliang{
+                font-size: $fonSize16;
+                color:$foncol666;
+            }
+            &:last-child{
+                border-bottom:none;
+            }
+        }
+    }
+
+    .showMore{
+        background-color: $foncolfff;
+        color:$foncol999;
+        font-size: $fonSize16;
+        line-height: .40rem;
+        text-align: center;
+    }
+
+    .ptxuzhi{
+       .intro{
+           p{
+               color:$foncolhuang;
+           }
+       }
+    }
+
+    .buyxuzhi{
+        height:.70rem;
+    }
+
+    .kaituanIntro{
+        .item{
+            height:.50rem;
+            padding-left:.15rem;
+            .left{
+                width:2.10rem;
+                line-height: .50rem;
+                span{
+                    color:$foncolhuang;
+                    font-size: $fonSize18;
+                    &.cancel{
+                        color:$foncol999;
+                        font-size: $fonSize14;
+                        text-decoration: line-through;
+                        margin-left:.08rem;
+                    }
+                }
+                .canyu{
+                    margin-right:.15rem;
+                    font-size: $fonSize14;
+                }
+            }
+            .right{
+                line-height: .50rem;
+                width:1.37rem;
+                text-align: center;
+                background-color: #ff8500;
+                color:$foncolfff;
+                font-size: $fonSize18;
+            }
+            &.bgccc{
+                .right{
+                    background-color: #ccc;
+                }
+
+            }
+        }
+    }
+}
