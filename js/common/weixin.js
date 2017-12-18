@@ -10,9 +10,9 @@ function checkCode(){
         //openToast('微信授权失败，请重新进入',2000);
         //window.location.href =shareLink;
 
-        window.location.replace("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxb49f0a0ee3b7b621&redirect_uri="+location+"&response_type=code&scope=snsapi_base&state=123#wechat_redirect");  //
-        console.log("weixincode2"+code);
-        return false;
+        // window.location.replace("https://open.weixin.qq.com/connect/oauth2/authorize?appid=wxb49f0a0ee3b7b621&redirect_uri="+location+"&response_type=code&scope=snsapi_base&state=123#wechat_redirect");  //
+        // console.log("weixincode2"+code);
+        // return false;
     }
 }
 
